@@ -1,0 +1,190 @@
+.counselor-section {
+  position: relative;
+
+  width: 100%;
+  min-height: 450px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 80px 20px;
+
+  background:
+    linear-gradient(
+      rgba(91, 22, 32, 0.88),
+      rgba(91, 22, 32, 0.88)
+    ),
+    url("https://res.cloudinary.com/dpvbaiyus/image/upload/v1772014918/students_mxoblc.avif");
+
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+}
+
+.counselor-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.15);
+
+  pointer-events: none;
+}
+
+.counselor-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+/* Subtitle */
+
+.counselor-subtitle {
+  margin: 0 0 12px;
+
+  color: #fcd34d;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Heading */
+
+.counselor-title {
+  margin: 0 0 18px;
+
+  color: #ffffff;
+
+  font-size: 48px;
+  font-weight: 700;
+
+  line-height: 1.15;
+}
+
+/* Description */
+
+.counselor-description {
+  max-width: 680px;
+
+  margin: 0 auto 32px;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-size: 18px;
+
+  line-height: 1.6;
+}
+
+/* Button */
+
+.counselor-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 15px 32px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: #ffffff;
+  color: #7b1e2b;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.counselor-button:hover {
+  background: #fcd34d;
+  color: #5b1620;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.counselor-button:active {
+  transform: translateY(0);
+}
+
+.counselor-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .counselor-section {
+    min-height: 400px;
+
+    padding: 70px 20px;
+  }
+
+  .counselor-title {
+    font-size: 38px;
+  }
+
+  .counselor-description {
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  .counselor-section {
+    min-height: 380px;
+
+    padding: 60px 16px;
+  }
+
+  .counselor-subtitle {
+    font-size: 12px;
+  }
+
+  .counselor-title {
+    font-size: 30px;
+  }
+
+  .counselor-description {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  .counselor-button {
+    width: 100%;
+    max-width: 280px;
+
+    padding: 14px 20px;
+
+    font-size: 16px;
+  }
+}

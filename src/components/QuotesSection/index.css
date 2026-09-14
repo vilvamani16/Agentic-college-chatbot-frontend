@@ -1,0 +1,254 @@
+.quotes-section {
+  width: 100%;
+
+  padding: 75px 0;
+
+  background: #ffffff;
+}
+
+.quotes-container {
+  width: 100%;
+
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 0 24px;
+
+  text-align: center;
+}
+
+/* Quote Icon */
+
+.quote-icon-wrapper {
+  display: flex;
+
+  justify-content: center;
+
+  margin-bottom: 25px;
+}
+
+.quote-icon {
+  width: 42px;
+  height: 42px;
+
+  color: #7b1e2b;
+
+  opacity: 0.9;
+}
+
+/* Slider */
+
+.quote-slider {
+  position: relative;
+
+  min-height: 150px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+/* Quote Content */
+
+.quote-content {
+  width: 100%;
+
+  padding: 0 65px;
+
+  transition: opacity 0.3s ease;
+}
+
+.quote-text {
+  margin: 0 0 18px;
+
+  color: #333333;
+
+  font-size: 28px;
+
+  font-weight: 500;
+
+  font-style: italic;
+
+  line-height: 1.6;
+}
+
+.quote-author {
+  margin: 0;
+
+  color: #7b1e2b;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+/* Arrows */
+
+.quote-arrow {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #999999;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.quote-arrow svg {
+  width: 26px;
+  height: 26px;
+}
+
+.quote-arrow:hover {
+  color: #7b1e2b;
+
+  transform: translateY(-50%) scale(1.1);
+}
+
+.quote-arrow-left {
+  left: 0;
+}
+
+.quote-arrow-right {
+  right: 0;
+}
+
+/* Dots */
+
+.quote-dots {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 25px;
+}
+
+.quote-dot {
+  width: 10px;
+  height: 10px;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #d5d5d5;
+
+  cursor: pointer;
+
+  transition:
+    width 0.3s ease,
+    background 0.3s ease;
+}
+
+.quote-dot.active {
+  width: 24px;
+
+  border-radius: 10px;
+
+  background: #7b1e2b;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+  .quotes-section {
+    padding: 60px 0;
+  }
+
+  .quote-text {
+    font-size: 23px;
+
+    line-height: 1.5;
+  }
+
+  .quote-content {
+    padding: 0 50px;
+  }
+
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+  .quotes-section {
+    padding: 50px 0;
+  }
+
+  .quotes-container {
+    padding: 0 16px;
+  }
+
+  .quote-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .quote-slider {
+    min-height: 190px;
+  }
+
+  .quote-content {
+    padding: 0 38px;
+  }
+
+  .quote-text {
+    font-size: 19px;
+
+    line-height: 1.5;
+  }
+
+  .quote-author {
+    font-size: 14px;
+  }
+
+  .quote-arrow {
+    width: 32px;
+    height: 32px;
+  }
+
+  .quote-arrow svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .quote-arrow-left {
+    left: -5px;
+  }
+
+  .quote-arrow-right {
+    right: -5px;
+  }
+
+}

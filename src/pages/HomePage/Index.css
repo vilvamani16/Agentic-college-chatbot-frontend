@@ -1,0 +1,97 @@
+/* ================================
+   HOME PAGE
+================================ */
+
+.home-page {
+  min-height: 100vh;
+  background: #fff;
+  color: #222;
+}
+
+
+/* ================================
+   UNLOCK SECTION
+================================ */
+
+.unlock-section {
+  background: #f8f1e8;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.unlock-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px 80px;
+}
+
+.unlock-container h2 {
+  margin: 0 0 16px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #222;
+}
+
+.unlock-container p {
+  max-width: 650px;
+  margin: 0 auto 32px;
+  color: #666;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.unlock-button {
+  border: none;
+  background: #7b1e2b;
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.unlock-button:hover {
+  background: #5f1621;
+  transform: translateY(-2px);
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+  .unlock-section {
+    padding-top: 60px;
+  }
+
+  .unlock-container {
+    padding-bottom: 60px;
+  }
+
+  .unlock-container h2 {
+    font-size: 28px;
+  }
+
+  .unlock-container p {
+    font-size: 15px;
+  }
+
+  .unlock-button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .unlock-container h2 {
+    font-size: 25px;
+  }
+
+  .unlock-container p {
+    font-size: 14px;
+  }
+}

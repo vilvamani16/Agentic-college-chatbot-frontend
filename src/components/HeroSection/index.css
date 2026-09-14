@@ -1,0 +1,196 @@
+.hero-section {
+  position: relative;
+
+  width: 100%;
+  min-height: 650px;
+
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.78) 0%,
+      rgba(0, 0, 0, 0.58) 45%,
+      rgba(0, 0, 0, 0.25) 100%
+    );
+}
+
+.hero-content-wrapper {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+/* Established */
+
+.hero-established {
+  margin: 0 0 18px;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-size: 14px;
+  font-weight: 500;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* Heading */
+
+.hero-title {
+  margin: 0 0 24px;
+
+  color: #ffffff;
+
+  font-size: clamp(42px, 6vw, 76px);
+
+  font-weight: 700;
+
+  line-height: 1.08;
+
+  letter-spacing: -1.5px;
+}
+
+.hero-highlight {
+  color: #f3c969;
+}
+
+/* Description */
+
+.hero-description {
+  max-width: 700px;
+
+  margin: 0 0 32px;
+
+  color: rgba(255, 255, 255, 0.92);
+
+  font-size: 19px;
+
+  line-height: 1.65;
+}
+
+/* Button */
+
+.hero-button {
+  display: inline-block;
+
+  padding: 13px 25px;
+
+  background: #ffffff;
+  color: #7b1e2b;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.hero-button:hover {
+  background: #f3c969;
+  color: #641722;
+
+  transform: translateY(-2px);
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    min-height: 580px;
+  }
+
+  .hero-content-wrapper {
+    min-height: 580px;
+  }
+
+  .hero-content {
+    padding: 35px 20px;
+  }
+
+  .hero-established {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .hero-title {
+    font-size: 45px;
+  }
+
+  .hero-description {
+    font-size: 17px;
+    max-width: 600px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+  .hero-section {
+    min-height: 560px;
+
+    background-position: 60% center;
+  }
+
+  .hero-content-wrapper {
+    min-height: 560px;
+  }
+
+  .hero-content {
+    padding: 30px 18px;
+  }
+
+  .hero-established {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-title {
+    font-size: 38px;
+    line-height: 1.12;
+
+    letter-spacing: -0.5px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+    line-height: 1.55;
+
+    margin-bottom: 26px;
+  }
+
+  .hero-button {
+    padding: 12px 20px;
+
+    font-size: 14px;
+  }
+}

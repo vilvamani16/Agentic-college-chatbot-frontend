@@ -1,0 +1,221 @@
+.hiring-section {
+  padding: 80px 20px;
+  background: #fdf8f2;
+}
+
+.hiring-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hiring-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hiring-subtitle {
+  color: #7b1e2b;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.hiring-header h2 {
+  color: #1f2937;
+  font-size: 38px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Main Grid */
+
+.hiring-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* Package Card */
+
+.package-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.package-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.package-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.package-header h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #374151;
+  font-size: 18px;
+  margin: 0;
+}
+
+.trend-icon {
+  width: 20px;
+  height: 20px;
+  color: #7b1e2b;
+}
+
+/* Department */
+
+.department-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.department-item {
+  width: 100%;
+}
+
+.department-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.department-info span {
+  color: #374151;
+  font-weight: 500;
+}
+
+.department-info strong {
+  color: #7b1e2b;
+}
+
+.progress-background {
+  width: 100%;
+  height: 12px;
+  background: #eeeeee;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #7b1e2b;
+  border-radius: 20px;
+  transition: width 0.7s ease;
+}
+
+/* Recruiter Images */
+
+.recruiter-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.recruiter-images img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+/* Recruiter Card */
+
+.recruiter-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.recruiter-card h3 {
+  color: #374151;
+  font-size: 19px;
+  margin: 0 0 18px;
+}
+
+.recruiter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.recruiter-tags span {
+  background: #fdf8f2;
+  color: #374151;
+  padding: 7px 13px;
+  border-radius: 20px;
+  font-size: 14px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.recruiter-tags span:hover {
+  border-color: #7b1e2b;
+  color: #7b1e2b;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .hiring-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hiring-header h2 {
+    font-size: 32px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .hiring-section {
+    padding: 60px 15px;
+  }
+
+  .hiring-header {
+    margin-bottom: 35px;
+  }
+
+  .hiring-header h2 {
+    font-size: 28px;
+  }
+
+  .package-card,
+  .recruiter-card {
+    padding: 20px;
+  }
+
+  .package-header {
+    align-items: flex-start;
+  }
+
+  .package-header h3 {
+    font-size: 16px;
+  }
+
+  .recruiter-images img {
+    height: 90px;
+  }
+
+  .recruiter-tags span {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}

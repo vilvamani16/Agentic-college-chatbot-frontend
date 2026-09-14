@@ -1,0 +1,375 @@
+.courses-section {
+  width: 100%;
+
+  padding: 90px 0;
+
+  background: #faf6ed;
+}
+
+.courses-container {
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 0 24px;
+}
+
+/* Header */
+
+.courses-header {
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.courses-subtitle {
+  margin: 0 0 8px;
+
+  color: #7b1e2b;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.5px;
+}
+
+.courses-title {
+  margin: 0;
+
+  color: #222222;
+
+  font-size: 40px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+/* Program Title */
+
+.program-title {
+  margin: 0 0 18px;
+
+  color: #333333;
+
+  font-size: 22px;
+
+  font-weight: 700;
+}
+
+/* B.Tech Grid */
+
+.btech-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 16px;
+
+  margin-bottom: 45px;
+}
+
+/* Course Card */
+
+.course-card {
+  padding: 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 10px;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.course-card:hover {
+  border-color: #7b1e2b;
+
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.09);
+
+  transform: translateY(-3px);
+}
+
+.course-card-content {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+}
+
+.course-icon {
+  width: 21px;
+  height: 21px;
+
+  margin-top: 3px;
+
+  flex-shrink: 0;
+
+  color: #7b1e2b;
+}
+
+.course-name {
+  margin: 0;
+
+  color: #222222;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  line-height: 1.4;
+}
+
+.course-details {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 9px;
+
+  color: #777777;
+
+  font-size: 13px;
+}
+
+.course-seats {
+  display: flex;
+
+  align-items: center;
+
+  gap: 4px;
+}
+
+.small-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.course-average {
+  color: #7b1e2b;
+
+  font-weight: 600;
+}
+
+/* M.Tech / MBA */
+
+.advanced-programs {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 24px;
+}
+
+.advanced-card {
+  padding: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 12px;
+
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.advanced-card:hover {
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08);
+
+  transform: translateY(-2px);
+}
+
+/* Card Header */
+
+.advanced-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  margin-bottom: 20px;
+}
+
+.program-image {
+  width: 64px;
+  height: 64px;
+
+  object-fit: cover;
+
+  border-radius: 9px;
+
+  flex-shrink: 0;
+}
+
+.advanced-title {
+  margin: 0;
+
+  color: #333333;
+
+  font-size: 21px;
+
+  font-weight: 700;
+}
+
+/* M.Tech */
+
+.mtech-list {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.mtech-item {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 10px 0;
+
+  border-bottom: 1px solid #f2f2f2;
+
+  font-size: 14px;
+}
+
+.mtech-item:last-child {
+  border-bottom: none;
+}
+
+.mtech-name {
+  color: #555555;
+}
+
+.mtech-seats {
+  color: #777777;
+
+  white-space: nowrap;
+}
+
+/* MBA */
+
+.mba-name {
+  margin: 0;
+
+  color: #555555;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+}
+
+.mba-details {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-top: 13px;
+
+  font-size: 14px;
+}
+
+.mba-seats {
+  color: #777777;
+}
+
+.mba-average {
+  color: #7b1e2b;
+
+  font-weight: 600;
+}
+
+.mba-description {
+  margin: 9px 0 0;
+
+  color: #777777;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+  .courses-section {
+    padding: 70px 0;
+  }
+
+  .btech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .courses-title {
+    font-size: 36px;
+  }
+
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .courses-section {
+    padding: 55px 0;
+  }
+
+  .courses-container {
+    padding: 0 18px;
+  }
+
+  .courses-header {
+    margin-bottom: 35px;
+  }
+
+  .courses-title {
+    font-size: 30px;
+  }
+
+  .program-title {
+    font-size: 19px;
+  }
+
+  .btech-grid {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 35px;
+  }
+
+  .advanced-programs {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .advanced-card {
+    padding: 20px;
+  }
+
+  .advanced-title {
+    font-size: 19px;
+  }
+
+}
