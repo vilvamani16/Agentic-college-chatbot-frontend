@@ -49,7 +49,7 @@ export default function SignupPage() {
         phone: phone || undefined,
       });
 
-      login(data.token);
+      await login(data.token);
 
       toast.success("Account created! Welcome to EduReach.");
 

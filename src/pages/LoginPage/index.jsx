@@ -38,7 +38,7 @@ export default function LoginPage() {
         password,
       });
 
-      login(data.token);
+      await login(data.token);
 
       toast.success("Welcome back!");
 
